@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #FDF1F7;
+}
+.navbar {
+    padding: 10px;
+    background-color: #FFDDF1;
+}
+.div--nologo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.logo--nav {
+    user-select: none;
+    width: 35px;
+    position: absolute;
+}
+.login--nav {
+    width: 45px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #4B003B;
+    text-decoration: none;
+    font-size: 25px;
+}
+.a--nav {
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #4B003B;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0 30px;
+}
+.a--nav:hover {
+    color: #FFDDF1;
+    background-color: #4B003B; 
+    box-shadow: 0 0 10px #850068;
+}
+.imagen--fondo__main {
+    width: 100%;
+    height: 600px;
+    background-image: url(./Images/48040.jpg);
+    text-align: center;
+}
+.img--principal {
+    width: 275px;
+    margin-top: 50px;
+}
+.p--main {
+    user-select: none;
+   color: #4B003B;
+   font-size: 50px;
+   margin: 20px;
+}
+.a--main__iniciar {
+    text-decoration: none;
+    color: white;
+    background-color: #4B003B;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 50px;
+    margin: 20px;
+}
+.a--main__iniciar:hover {
+    background-color: #FFDDF1;
+    color: #4B003B;
+}
+#h2--section {
+    margin: 20px 0 40px 0;
+    text-align: center;
+    color: #4B003B;
+    font-size: 50px;
+    user-select: none;
+}
+.article--section__main {
+    margin-bottom: 20px;
+    color: #4B003B;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.section--flex {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.h2-login {
+    margin: 50px 0 20px 0;
+    text-align: center;
+    color: #4B003B;
+    font-size: 50px;
+    user-select: none;
+}
+.div--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.name--input {
+    color: #4B003B;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+.name--email {
+    color: #4B003B;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+.div--flex__1 {
+    margin: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-align: center;
+}
+.div--flex__1 p {
+    padding: 5px 10px;
+    user-select: none;
+}
+.name--submit {
+    padding: 0 20px;
+    font-size: 50px;
+    background-color: white;
+    border: 3px solid #4B003B;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.name--submit:hover {
+    border: none;
+    background-color: #4B003B;
+    color: white;
+    box-shadow: 0 0 10px #4B003B;
+}
+.main--h2__contacto {
+    margin: 50px 0 20px 0;
+    text-align: center;
+    color: #4B003B;
+    font-size: 50px;
+    user-select: none;
+}
+.contacto--div__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name--input__contacto {
+    margin: 20px;
+    color: #4B003B;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+}
+.textarea--contacto {
+    color: #4B003B;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+}
+.submit--contacto {
+    margin: 40px;
+    padding: 0 20px;
+    font-size: 50px;
+    color: white;
+    background-color: #4B003B;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.submit--contacto:hover {
+    border: none;
+    background-color: #4B003B;
+    color: white;
+    box-shadow: 0 0 10px #4B003B;
+}
+.numero--contacto {
+    margin: 40px;
+    background-color: #4B003B;
+    color: white;
+    padding: 5px 20px;
+    font-size: 25px;
+    border-radius: 25px;
+}
+.a--focus {
+    background-color: #4B003B;
+    color: white;
+    padding: 0 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0 30px;
+    cursor: pointer;
+    user-select: none;
+}
+.div-reseñas_flex {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+    justify-content: space-evenly;
+}
+.card-flex_reseña {
+    background-color: #4B003B;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.logo-nav_index {
+    width: 35px;
+}
