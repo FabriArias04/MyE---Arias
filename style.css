@@ -7,24 +7,6 @@
 body {
     background-color: #FDF1F7;
 }
-.div--nologo {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-.logo--nav {
-    user-select: none;
-    width: 35px;
-    position: absolute;
-}
-.login--nav {
-    width: 45px;
-    padding: 0 10px;
-    border-radius: 20px;
-    color: #4B003B;
-    text-decoration: none;
-    font-size: 25px;
-}
 .a--nav {
     padding: 0 20px;
     border-radius: 20px;
@@ -47,6 +29,8 @@ body {
 .img--principal {
     width: 275px;
     margin-top: 50px;
+    animation-name: mover3;
+    animation-duration: 0.5s;
 }
 .p--main {
     user-select: none;
@@ -83,6 +67,9 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+.article--section__main p {
+    margin-top: 10px;
+}
 .section--flex {
     display: flex;
     flex-flow: row wrap;
@@ -95,6 +82,8 @@ body {
     color: #4B003B;
     font-size: 50px;
     user-select: none;
+    animation-name: mover;
+    animation-duration: 0.5s;
 }
 .div--flex {
     display: flex;
@@ -149,6 +138,8 @@ body {
     color: #4B003B;
     font-size: 50px;
     user-select: none;
+    animation-name: mover;
+    animation-duration: 0.5s;
 }
 .contacto--div__flex {
     display: flex;
@@ -253,6 +244,11 @@ body {
     color: #4B003B;
     padding: 200px 50px; 
 }
+.section-grid h3 {
+    justify-content:safe;
+    animation-name: mover2;
+    animation-duration: 0.5s;
+}
 .body-grid_res {
     display: grid;
     grid-template-areas: 
@@ -282,5 +278,20 @@ body {
     }
     .section-grid {
         text-align: center;
+    }
+}
+@keyframes mover {
+    from {
+       font-size: 5px;
+    }
+}
+@keyframes mover2 {
+    from {
+       padding-top: 300px;
+    }
+}
+@keyframes mover3 {
+    from {
+       width: 20px;
     }
 }
