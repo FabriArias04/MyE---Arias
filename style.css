@@ -141,7 +141,7 @@ body {
     animation-name: mover;
     animation-duration: 0.5s;
 }
-.contacto--div__flex {
+.contacto--form__flex {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,9 +162,9 @@ body {
     border-radius: 5px;
 }
 .submit--contacto {
-    margin: 40px;
-    padding: 0 20px;
-    font-size: 50px;
+    margin: 30px;
+    padding: 0 10px;
+    font-size: 30px;
     color: white;
     background-color: #4B003B;
     border: none;
@@ -178,7 +178,7 @@ body {
     box-shadow: 0 0 10px #4B003B;
 }
 .numero--contacto {
-    margin: 40px;
+    margin: 20px;
     background-color: #4B003B;
     color: white;
     padding: 5px 20px;
