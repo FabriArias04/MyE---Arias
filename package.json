@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "página de venta tortas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabriArias04/MyE---Arias.git"
+  },
+  "author": "FabriArias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FabriArias04/MyE---Arias/issues"
+  },
+  "homepage": "https://github.com/FabriArias04/MyE---Arias#readme"
+}

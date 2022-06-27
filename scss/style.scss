@@ -1,29 +1,23 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Ubuntu', sans-serif;
-    scroll-behavior: smooth;
-}
-body {
-    background-color: #FDF1F7;
-}
+@import "default";
+@import "variables";
+
 .a--nav {
     padding: 0 20px;
     border-radius: 20px;
-    color: #4B003B;
+    color: $color-principal;
     text-decoration: none;
     font-size: 25px;
     margin: 0 30px;
-}
-.a--nav:hover {
-    color: #FFDDF1;
-    background-color: #4B003B; 
-    box-shadow: 0 0 10px #850068;
+    &:hover {
+        color: $color-secundario;
+        background-color: $color-principal; 
+        box-shadow: 0 0 10px #850068;
+    }
 }
 .imagen--fondo__main {
     width: 100%;
     height: 600px;
-    background-image: url(./Images/48040.jpg);
+    background-image: url(../images/fondomain.jpg);
     text-align: center;
 }
 .img--principal {
@@ -34,41 +28,46 @@ body {
 }
 .p--main {
     user-select: none;
-   color: #4B003B;
+   color: $color-principal;
    font-size: 50px;
    margin: 20px;
 }
 .a--main__iniciar {
     text-decoration: none;
     color: white;
-    background-color: #4B003B;
+    background-color: $color-principal;
     padding: 5px 20px;
     border-radius: 20px;
     font-size: 50px;
     margin: 20px;
-}
-.a--main__iniciar:hover {
-    background-color: #FFDDF1;
-    color: #4B003B;
+    &:hover {
+        background-color: $color-secundario;
+        color: $color-principal;
+    }
 }
 #h2--section {
     margin: 20px 0 40px 0;
     text-align: center;
-    color: #4B003B;
+    color: $color-principal;
     font-size: 50px;
     user-select: none;
 }
 .article--section__main {
     margin-bottom: 20px;
-    color: #4B003B;
+    color: $color-principal;
     text-align: center;
     background-color: white;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
-.article--section__main p {
+.article--section__main a {
     margin-top: 10px;
+    text-decoration: none;
+    color: $color-principal;
+    p {
+        margin-top: 10px;
+    }
 }
 .section--flex {
     display: flex;
@@ -79,7 +78,7 @@ body {
 .h2-login {
     margin: 50px 0 20px 0;
     text-align: center;
-    color: #4B003B;
+    color: $color-principal;
     font-size: 50px;
     user-select: none;
     animation-name: mover;
@@ -92,7 +91,7 @@ body {
     margin: 20px;
 }
 .name--input {
-    color: #4B003B;
+    color: $color-principal;
     padding: 10px;
     border: none;
     background-color: white;
@@ -100,7 +99,7 @@ body {
     border-radius: 5px;
 }
 .name--email {
-    color: #4B003B;
+    color: $color-principal;
     padding: 10px;
     border: none;
     background-color: white;
@@ -113,29 +112,29 @@ body {
     flex-flow: row nowrap;
     align-items: center;
     text-align: center;
-}
-.div--flex__1 p {
-    padding: 5px 10px;
-    user-select: none;
+    p {
+        padding: 5px 10px;
+        user-select: none;
+    }
 }
 .name--submit {
     padding: 0 20px;
     font-size: 50px;
     background-color: white;
-    border: 3px solid #4B003B;
+    border: 3px solid $color-principal;
     cursor: pointer;
     border-radius: 10px;
 }
 .name--submit:hover {
     border: none;
-    background-color: #4B003B;
+    background-color: $color-principal;
     color: white;
-    box-shadow: 0 0 10px #4B003B;
+    box-shadow: 0 0 10px $color-principal;
 }
 .main--h2__contacto {
     margin: 50px 0 20px 0;
     text-align: center;
-    color: #4B003B;
+    color: $color-principal;
     font-size: 50px;
     user-select: none;
     animation-name: mover;
@@ -148,14 +147,14 @@ body {
 }
 .name--input__contacto {
     margin: 20px;
-    color: #4B003B;
+    color: $color-principal;
     padding: 10px;
     border: none;
     background-color: white;
     border-radius: 5px;
 }
 .textarea--contacto {
-    color: #4B003B;
+    color: $color-principal;
     padding: 10px;
     border: none;
     background-color: white;
@@ -166,27 +165,27 @@ body {
     padding: 0 10px;
     font-size: 30px;
     color: white;
-    background-color: #4B003B;
+    background-color: $color-principal;
     border: none;
     cursor: pointer;
     border-radius: 25px;
 }
 .submit--contacto:hover {
     border: none;
-    background-color: #4B003B;
+    background-color: $color-principal;
     color: white;
-    box-shadow: 0 0 10px #4B003B;
+    box-shadow: 0 0 10px $color-principal;
 }
 .numero--contacto {
     margin: 20px;
-    background-color: #4B003B;
+    background-color: $color-principal;
     color: white;
     padding: 5px 20px;
     font-size: 25px;
     border-radius: 25px;
 }
 .p--focus {
-    background-color: #4B003B;
+    background-color: $color-principal;
     color: white;
     padding: 0 20px;
     border-radius: 20px;
@@ -195,9 +194,9 @@ body {
     margin: 0 30px;
     cursor: pointer;
     user-select: none;
-}
-.p--focus:hover {
-    color: white;
+    &:hover {
+        color: white;
+    }
 }
 .div-reseñas_flex {
     display: flex;
@@ -206,27 +205,27 @@ body {
     justify-content: space-evenly;
 }
 .card-flex_reseña {
-    background-color: #4B003B;
+    background-color: $color-principal;
     color: white;
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
 }
 .bg-personal {
-    background-color: #FFDDF1;
+    background-color: $color-secundario;
 }
 .a-nav_con {
     padding: 5px 20px;
     border-radius: 20px;
-    color: #4B003B;
+    color: $color-principal;
     text-decoration: none;
     font-size: 25px;
     margin: 0 30px;
-}
-.a-nav_con:hover {
-    color: #FFDDF1;
-    background-color: #4B003B; 
-    box-shadow: 0 0 10px #850068;
+    &:hover {
+        color: $color-secundario;
+        background-color: $color-principal; 
+        box-shadow: 0 0 10px #850068;
+    }
 }
 .header-grid {
     grid-area: header_g;
@@ -236,18 +235,18 @@ body {
 }
 .footer-grid {
     grid-area: footer_g;
-    background-color: #FFDDF1;
+    background-color: $color-secundario;
 }
 .section-grid {
     grid-area: section_g;
-    background-color: #FFDDF1;
-    color: #4B003B;
+    background-color: $color-secundario;
+    color: $color-principal;
     padding: 200px 50px; 
-}
-.section-grid h3 {
-    justify-content:safe;
-    animation-name: mover2;
-    animation-duration: 0.5s;
+    h3 {
+        justify-content:safe;
+        animation-name: mover2;
+        animation-duration: 0.5s;
+    }
 }
 .body-grid_res {
     display: grid;
@@ -257,41 +256,12 @@ body {
     "footer_g footer_g"
     ;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 15% 80% 5%;
 }
 .h2-res {
     font-size: 15px;
-    color: #4B003B;
+    color: $color-principal;
     margin: 5px;
     text-align: center;
 }
-@media (max-width: 570px) {
-    .body-grid_res {
-        grid-template-areas: 
-        "header_g"
-        "section_g"
-        "div_g"
-        "footer_g"
-        ;
-        grid-template-rows: 15% 20% 60% 5%;
-        grid-template-columns: 1fr;
-    }
-    .section-grid {
-        text-align: center;
-    }
-}
-@keyframes mover {
-    from {
-       font-size: 5px;
-    }
-}
-@keyframes mover2 {
-    from {
-       padding-top: 300px;
-    }
-}
-@keyframes mover3 {
-    from {
-       width: 20px;
-    }
-}
+
+@import "arrobas";
