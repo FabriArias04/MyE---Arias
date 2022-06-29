@@ -1,7 +1,7 @@
 {
   "name": "proyecto-final",
   "version": "1.0.0",
-  "description": "página de venta tortas",
+  "description": "PROYECTO de Fabrizio Arias, página para publicitar emprendimiento de tortas, con intención de convertir en ecommerce",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
