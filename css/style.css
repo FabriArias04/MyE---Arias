@@ -10,7 +10,7 @@ body {
   background-color: #FDF1F7;
 }
 
-.a--nav {
+.a--nav, .a-nav_con {
   padding: 0 20px;
   border-radius: 20px;
   color: #4B003B;
@@ -18,7 +18,7 @@ body {
   font-size: 25px;
   margin: 0 30px;
 }
-.a--nav:hover {
+.a--nav:hover, .a-nav_con:hover {
   color: #FFDDF1;
   background-color: #4B003B;
   box-shadow: 0 0 10px #850068;
@@ -247,20 +247,6 @@ body {
   background-color: #FFDDF1;
 }
 
-.a-nav_con {
-  padding: 5px 20px;
-  border-radius: 20px;
-  color: #4B003B;
-  text-decoration: none;
-  font-size: 25px;
-  margin: 0 30px;
-}
-.a-nav_con:hover {
-  color: #FFDDF1;
-  background-color: #4B003B;
-  box-shadow: 0 0 10px #850068;
-}
-
 .header-grid {
   grid-area: header_g;
 }
@@ -361,6 +347,11 @@ body {
   .img-fiesta, .img-fiesta2 {
     width: 350px;
   }
+  .ul-modificado {
+    margin-top: 15px;
+    margin-left: -30px;
+    padding-right: 300px;
+  }
 }
 @media (min-width: 751px) and (max-width: 991px) {
   .fiesta-div_flex {
@@ -378,6 +369,23 @@ body {
   }
   .fiesta-main_flex {
     padding: 50px;
+  }
+  .a--nav:hover, .a-nav_con:hover {
+    color: #4B003B;
+    background-color: #FFDDF1;
+    box-shadow: none;
+  }
+  .p--focus {
+    background-color: #4B003B;
+    color: #FFDDF1;
+  }
+  .p--focus:hover {
+    color: #FFDDF1;
+  }
+  .ul-modificado {
+    margin-top: 15px;
+    margin-left: -30px;
+    padding-right: 300px;
   }
 }
 @keyframes mover {

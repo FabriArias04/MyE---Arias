@@ -31,6 +31,11 @@
     .img-fiesta {
         width: 350px;
     }
+    .ul-modificado {
+        margin-top: 15px;
+        margin-left: -30px;
+        padding-right: 300px;
+    }
 }
 @media (min-width: 751px) and (max-width: 991px) {
     .fiesta-div_flex{
@@ -48,6 +53,23 @@
     }
     .fiesta-main_flex {
         padding: 50px;
+    }
+    .a--nav:hover {
+        color: $color-principal;
+        background-color: $color-secundario; 
+        box-shadow: none;
+    }
+    .p--focus {
+        background-color: $color-principal;
+        color: $color-secundario;
+        &:hover {
+            color: $color-secundario;
+        }
+    }
+    .ul-modificado {
+        margin-top: 15px;
+        margin-left: -30px;
+        padding-right: 300px;
     }
 }
 @keyframes mover {

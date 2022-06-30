@@ -28,9 +28,9 @@
 }
 .p--main {
     user-select: none;
-   color: $color-principal;
-   font-size: 50px;
-   margin: 20px;
+    color: $color-principal;
+    font-size: 50px;
+    margin: 20px;
 }
 .a--main__iniciar {
     text-decoration: none;
@@ -215,17 +215,7 @@
     background-color: $color-secundario;
 }
 .a-nav_con {
-    padding: 5px 20px;
-    border-radius: 20px;
-    color: $color-principal;
-    text-decoration: none;
-    font-size: 25px;
-    margin: 0 30px;
-    &:hover {
-        color: $color-secundario;
-        background-color: $color-principal; 
-        box-shadow: 0 0 10px #850068;
-    }
+    @extend .a--nav
 }
 .header-grid {
     grid-area: header_g;
