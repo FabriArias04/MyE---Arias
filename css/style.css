@@ -10,6 +10,21 @@ body {
   background-color: #FDF1F7;
 }
 
+@keyframes mover {
+  from {
+    font-size: 5px;
+  }
+}
+@keyframes mover2 {
+  from {
+    padding-top: 300px;
+  }
+}
+@keyframes mover3 {
+  from {
+    width: 20px;
+  }
+}
 .a--nav, .a-nav_con {
   padding: 0 20px;
   border-radius: 20px;
@@ -83,6 +98,38 @@ body {
 }
 .article--section__main a p {
   margin-top: 10px;
+}
+
+.footer-p {
+  background-color: #FFDDF1;
+  text-align: center;
+  color: #4B003B;
+  margin-bottom: 0;
+}
+
+.footer-flex, .contacto-flex {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #FFDDF1;
+  color: #4B003B;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.footer-a {
+  text-decoration: none;
+  background-color: #FFDDF1;
+  color: #4B003B;
+}
+.footer-a:hover {
+  border-bottom: 2px solid #4B003B;
+  color: #4B003B;
+}
+
+.div-footer_centrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section--flex {
@@ -187,7 +234,7 @@ body {
   border-radius: 5px;
 }
 
-.submit--contacto {
+.submit--contacto, .a-reseñas {
   margin: 30px;
   padding: 0 10px;
   font-size: 30px;
@@ -197,7 +244,7 @@ body {
   cursor: pointer;
   border-radius: 25px;
 }
-.submit--contacto:hover {
+.submit--contacto:hover, .a-reseñas:hover {
   border: none;
   background-color: #4B003B;
   color: white;
@@ -211,6 +258,10 @@ body {
   padding: 5px 20px;
   font-size: 25px;
   border-radius: 25px;
+}
+
+.contacto-flex {
+  margin-top: 25px;
 }
 
 .p--focus {
@@ -247,6 +298,10 @@ body {
   background-color: #FFDDF1;
 }
 
+.a-nav_con:hover {
+  padding: 3px 20px;
+}
+
 .header-grid {
   grid-area: header_g;
 }
@@ -266,10 +321,12 @@ body {
   color: #4B003B;
   padding: 200px 50px;
 }
-.section-grid h3 {
+.section-grid h1 {
   justify-content: safe;
   animation-name: mover2;
   animation-duration: 0.5s;
+  font-size: 35px;
+  margin-bottom: 20px;
 }
 
 .body-grid_res {
@@ -278,11 +335,35 @@ body {
   grid-template-columns: 1fr 2fr;
 }
 
-.h2-res {
-  font-size: 15px;
+.div-reseñas_f2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.estrella-reseñas {
+  width: 30px;
+  color: #4B003B;
+  padding: 0 5px 0 5px;
+}
+
+.h2-reseñas {
+  text-align: center;
+  margin-top: 5px;
+  padding: 0 5px 0 5px;
+  font-size: 20px;
+}
+
+.h3-res {
+  font-size: 20px;
   color: #4B003B;
   margin: 5px;
   text-align: center;
+}
+
+.a-reseñas {
+  text-decoration: none;
+  padding: 5px 12px;
 }
 
 .img-fiesta, .img-fiesta2 {
@@ -305,14 +386,18 @@ body {
   animation-name: mover;
   animation-duration: 0.4s;
 }
+.fiesta-div_flex p {
+  margin-top: 20px;
+}
 .fiesta-div_flex h2 {
   margin-top: 200px;
 }
 
 .fiesta-main_flex {
-  padding: 50px 150px;
+  padding: 50px 200px;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
 }
 
 .img-fiesta2 {
@@ -326,6 +411,9 @@ body {
   }
   .section-grid {
     text-align: center;
+  }
+  .footer-flex, .contacto-flex {
+    flex-direction: column;
   }
 }
 @media (max-width: 750px) {
@@ -386,21 +474,6 @@ body {
     margin-top: 15px;
     margin-left: -30px;
     padding-right: 300px;
-  }
-}
-@keyframes mover {
-  from {
-    font-size: 5px;
-  }
-}
-@keyframes mover2 {
-  from {
-    padding-top: 300px;
-  }
-}
-@keyframes mover3 {
-  from {
-    width: 20px;
   }
 }
 
