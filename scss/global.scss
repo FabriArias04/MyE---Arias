@@ -329,7 +329,20 @@
         margin-top: 20px;
     }
     h2 {
-       margin-top: 200px
+       margin-top: 130px;
+       margin-bottom: 30px
+    }
+    input {
+        background-color: $color-principal;
+        border: none;
+        padding: 5px 10px 7px 10px;
+        border-radius: 10px;
+        &:hover {
+            box-shadow: 0 0 10px $color-principal;
+        }
+        &::placeholder{
+            color: $color-secundario;
+        }
     }
 }
 .fiesta-main_flex {

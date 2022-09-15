@@ -390,7 +390,20 @@ body {
   margin-top: 20px;
 }
 .fiesta-div_flex h2 {
-  margin-top: 200px;
+  margin-top: 130px;
+  margin-bottom: 30px;
+}
+.fiesta-div_flex input {
+  background-color: #4B003B;
+  border: none;
+  padding: 5px 10px 7px 10px;
+  border-radius: 10px;
+}
+.fiesta-div_flex input:hover {
+  box-shadow: 0 0 10px #4B003B;
+}
+.fiesta-div_flex input::placeholder {
+  color: #FFDDF1;
 }
 
 .fiesta-main_flex {
